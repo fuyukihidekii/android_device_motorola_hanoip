@@ -28,7 +28,6 @@ TARGET_MODULE_ALIASES += \
     wcd934x_dlkm.ko:audio_wcd934x.ko
 
 # Partitions
-PRODUCT_BUILD_SUPER_PARTITION := false
 PRODUCT_USE_DYNAMIC_PARTITIONS := true
 
 # SELinux
