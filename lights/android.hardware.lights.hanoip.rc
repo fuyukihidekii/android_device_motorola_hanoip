@@ -1,4 +1,4 @@
-service vendor.light /vendor/bin/hw/android.hardware.lights-service.liber
+service vendor.light /vendor/bin/hw/android.hardware.lights-service.hanoip
     class hal
     user system
     group system

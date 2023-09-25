@@ -15,9 +15,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/lineage_liber.mk
+    $(LOCAL_DIR)/lineage_hanoip.mk
 
 COMMON_LUNCH_CHOICES := \
-    lineage_liber-eng \
-    lineage_liber-user \
-    lineage_liber-userdebug
+    lineage_hanoip-eng \
+    lineage_hanoip-user \
+    lineage_hanoip-userdebug

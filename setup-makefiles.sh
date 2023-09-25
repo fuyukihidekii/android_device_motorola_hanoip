@@ -8,7 +8,7 @@
 
 set -e
 
-export DEVICE=liber
+export DEVICE=hanoip
 export DEVICE_COMMON=sm6150-common
 export VENDOR=motorola
 
