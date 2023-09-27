@@ -29,7 +29,7 @@ $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 PRODUCT_SHIPPING_API_LEVEL := 30
 
 # Display
-TARGET_SCREEN_DENSITY := 420
+TARGET_SCREEN_DENSITY := 400
 
 # Boot animation
 TARGET_SCREEN_HEIGHT := 2340
