@@ -95,11 +95,11 @@ DEVICE_MATRIX_FILE := $(DEVICE_PATH)/compatibility_matrix.xml
 PRODUCT_GMS_CLIENTID_BASE := android-motorola
 
 # Build ID
-BUILD_FINGERPRINT := "motorola/liber_retail/liber:11/RPIS31.Q2-42-25-1/19a8e:user/release-keys"
+BUILD_FINGERPRINT := "motorola/hanoip_retail/hanoip:12/S2RI32.32-20-9-9-2/5bf47:user/release-keys"
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
-    PRODUCT_NAME=liber_retail \
-    PRIVATE_BUILD_DESC="liber_retail-user 11 RPIS31.Q2-42-25-1 19a8e release-keys"
+    PRODUCT_NAME=hanoip_retail \
+    PRIVATE_BUILD_DESC="hanoip_retail-user 12 S2RI32.32-20-9-9-2 1591b-5bf47 release-keys"
 
 # Inherit from common SM6150 platform configuration.
 $(call inherit-product, device/motorola/sm6150-common/common.mk)
