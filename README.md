@@ -1,19 +1,27 @@
-# Motorola One Fusion+
+```
 
-## Device specifications
+Copyright (C) 2022 The LineageOS Project
 
-Basic   | Spec Sheet
--------:|:-------------------------
-CPU     | Octa-core (2x2.2 GHz Kryo 470 Gold & 6x1.8 GHz Kryo 470 Silver)
-CHIPSET | Qualcomm SDM730 Snapdragon 730
+SPDX-License-Identifier: Apache-2.0
+
+```
+
+# Motorola Moto G60
+
+## Device Specifications
+
+Basic | Spec Sheet
+---------:|:-------------------------
+CPU     | Octa-core (2x2.3 GHz Kryo 470 Gold + 6x1.8 GHz Kryo 470 Silver)
+CHIPSET | Qualcomm Snapdragon 732G
 GPU     | Adreno 618
 Memory  | 4 / 6GB
-Shipped Android Version | 10
+Shipped Android Version | Android 11
 Storage | 128GB
-Battery | 5000 mAh
-Dimensions | 162.9 x 76.4 x 9.6 mm
-Display | 1080 x 2340 pixels, 6.5" IPS LCD
-Rear Camera  | 64 MP (f/1.8, wide, PADF) + 8 MP (f/2.2, ultrawide) + 5MP (f/2.2, marcro) + 2MP (f/2.2, depth) HDR
-Front Camera | 16 MP (f/2.0)
+Battery | 6000 mAh
+Dimensions | 169.6 x 75.9 x 9.8 mm
+Display | 1080 x 2460 pixels, 6.8" IPS LCD
+Rear Camera  | 108 MP (f/1.7, wide) + 8 MP (f/2.2, ultrawide) + 2 MP (f/2.4, depth)
+Front Camera | 32 MP (f/2.2)
 
-![Device Picture](https://fdn2.gsmarena.com/vv/pics/motorola/motorola-one-fusion-plus-1.jpg)
+![Device Picture](https://brmotorolanew.vtexassets.com/arquivos/ids/160837-1200-auto?v=637751525709970000&width=1200&height=auto&aspect=true)
