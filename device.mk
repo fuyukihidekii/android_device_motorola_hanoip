@@ -14,14 +14,30 @@
 # limitations under the License.
 #
 
-PRODUCT_BUILD_SUPER_PARTITION := false
+# Soong namespaces
+PRODUCT_SOONG_NAMESPACES += \
+    $(LOCAL_PATH)
+
+# Inherit from those AOSP products, most specific first.
+$(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
+$(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
+
+# Inherit from common LineageOS configuration.
+$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+
+# Device shipping API
 PRODUCT_SHIPPING_API_LEVEL := 29
-PRODUCT_USE_DYNAMIC_PARTITIONS := true
 
-$(call inherit-product, device/motorola/sm6150-common/common.mk)
+# Display
+TARGET_SCREEN_DENSITY := 420
 
-# Get non-open-source specific aspects
-$(call inherit-product, vendor/motorola/hanoip/hanoip-vendor.mk)
+# Boot animation
+TARGET_SCREEN_HEIGHT := 2340
+TARGET_SCREEN_WIDTH := 1080
+
+# AAPT
+PRODUCT_AAPT_CONFIG := normal
+PRODUCT_AAPT_PREF_CONFIG := xxhdpi
 
 # Properties
 -include $(LOCAL_PATH)/properties.mk
@@ -71,6 +87,22 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     android.hardware.sensors@2.0-service.multihal
 
-# Soong namespaces
-PRODUCT_SOONG_NAMESPACES += \
-    $(LOCAL_PATH)
+# VINTF
+DEVICE_MANIFEST_FILE += $(DEVICE_PATH)/manifest.xml
+DEVICE_MATRIX_FILE := $(DEVICE_PATH)/compatibility_matrix.xml
+
+# GMS Partner ID
+PRODUCT_GMS_CLIENTID_BASE := android-motorola
+
+# Build ID
+BUILD_FINGERPRINT := "motorola/liber_retail/liber:11/RPIS31.Q2-42-25-1/19a8e:user/release-keys"
+
+PRODUCT_BUILD_PROP_OVERRIDES += \
+    PRODUCT_NAME=liber_retail \
+    PRIVATE_BUILD_DESC="liber_retail-user 11 RPIS31.Q2-42-25-1 19a8e release-keys"
+
+# Inherit from common SM6150 platform configuration.
+$(call inherit-product, device/motorola/sm6150-common/common.mk)
+
+# Inherit product proprietary files
+$(call inherit-product, vendor/motorola/hanoip/hanoip-vendor.mk)

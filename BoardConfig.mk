@@ -14,16 +14,7 @@
 # limitations under the License.
 #
 
--include device/motorola/sm6150-common/BoardConfigCommon.mk
-
 DEVICE_PATH := device/motorola/hanoip
-
-# Display
-TARGET_SCREEN_DENSITY := 420
-
-# HIDL
-DEVICE_MANIFEST_FILE += $(DEVICE_PATH)/manifest.xml
-DEVICE_MATRIX_FILE := $(DEVICE_PATH)/compatibility_matrix.xml
 
 # Kernel
 TARGET_KERNEL_CONFIG := vendor/hanoip_defconfig
@@ -36,5 +27,12 @@ TARGET_MODULE_ALIASES += \
     wcd_spi_dlkm.ko:audio_wcd_spi.ko \
     wcd934x_dlkm.ko:audio_wcd934x.ko
 
+# Partitions
+PRODUCT_BUILD_SUPER_PARTITION := false
+PRODUCT_USE_DYNAMIC_PARTITIONS := true
+
 # SELinux
 BOARD_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy/vendor
+
+# Inherit from common SM6150 board configuration.
+$(call inherit-product, $(COMMON_PATH)/BoardConfigCommon.mk)
