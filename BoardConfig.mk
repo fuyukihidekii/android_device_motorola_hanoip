@@ -17,6 +17,7 @@
 DEVICE_PATH := device/motorola/hanoip
 
 # Kernel
+BOARD_BOOTIMG_HEADER_VERSION := 3
 TARGET_KERNEL_CONFIG := vendor/hanoip_defconfig
 
 # Kernel modules - Audio
