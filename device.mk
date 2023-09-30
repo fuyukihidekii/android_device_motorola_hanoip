@@ -14,6 +14,9 @@
 # limitations under the License.
 #
 
+# Declare Virtual A/B support on targets launched with Android 11+
+$(call inherit-product, $(SRC_TARGET_DIR)/product/virtual_ab_ota.mk)
+
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH)
