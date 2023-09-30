@@ -84,9 +84,6 @@ PRODUCT_PACKAGES += \
 DEVICE_MANIFEST_FILE += $(DEVICE_PATH)/manifest.xml
 DEVICE_MATRIX_FILE := $(DEVICE_PATH)/compatibility_matrix.xml
 
-# GMS Partner ID
-PRODUCT_GMS_CLIENTID_BASE := android-motorola
-
 # Build ID
 BUILD_FINGERPRINT := "motorola/hanoip_retail/hanoip:12/S2RI32.32-20-9-9-2/5bf47:user/release-keys"
 
